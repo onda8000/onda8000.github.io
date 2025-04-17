@@ -1,105 +1,118 @@
+
 <!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="온다프린팅 - 책이 되는 모든 과정, 믿고 맡기세요">
   <title>온다프린팅</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
       margin: 0;
-      font-family: 'Noto Sans KR', sans-serif;
+      font-family: 'Arial', sans-serif;
       background-color: #fafafa;
       color: #333;
     }
+    .slider {
+      width: 100%;
+      overflow: hidden;
+    }
+    .slides {
+      display: flex;
+      width: 300%;
+      animation: slide 9s infinite;
+    }
+    .slides img {
+      width: 100%;
+      height: auto;
+    }
+    @keyframes slide {
+      0%   { margin-left: 0; }
+      33%  { margin-left: -100%; }
+      66%  { margin-left: -200%; }
+      100% { margin-left: 0; }
+    }
     header {
-      background-color: #fff;
-      padding: 60px 20px;
       text-align: center;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      padding: 20px 0;
+      background-color: #ffffff;
     }
     header h1 {
-      font-size: 2.2em;
-      color: #222;
-      margin-bottom: 10px;
+      margin: 10px 0 5px;
     }
     header p {
-      font-size: 1.2em;
+      font-size: 1.1em;
       color: #666;
     }
     nav {
-      background-color: #ffe4e1;
-      padding: 15px;
+      background-color: #f0f0f0;
+      padding: 10px;
       text-align: center;
     }
     nav a {
       margin: 0 15px;
       text-decoration: none;
-      color: #444;
-      font-weight: 500;
+      color: #333;
+      font-weight: bold;
     }
     section {
-      padding: 60px 20px;
+      padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
     }
-    .hero {
-      background: #fdf1f2;
-      text-align: center;
-      padding: 100px 20px;
-    }
-    .hero h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
-    }
     footer {
-      background-color: #f3f3f3;
       text-align: center;
-      padding: 30px;
+      padding: 20px;
+      background-color: #f0f0f0;
       font-size: 0.9em;
       color: #777;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>온다프린팅</h1>
-    <p>책이 되는 모든 과정, 믿고 맡기세요</p>
-  </header>
-  <nav>
-    <a href="#service">제작 서비스</a>
-    <a href="#portfolio">포트폴리오</a>
-    <a href="#contact">견적 문의</a>
-    <a href="#about">회사 소개</a>
-  </nav>
 
-  <section class="hero">
-    <h2>정성 가득, 단 한 권이라도</h2>
-    <p>무선제본 / 중철제본 / 하드커버 / 접지물 등 다양한 인쇄 서비스를 제공합니다.</p>
-  </section>
+<header>
+  <h1>온다프린팅</h1>
+  <p>책이 되는 모든 과정, 믿고 맡기세요</p>
+</header>
 
-  <section id="service">
-    <h2>제작 서비스</h2>
-    <p>무선제본, 중철제본, 하드커버 등 다양한 책자 제작이 가능합니다. 고객 맞춤 인쇄/편집 서비스도 제공해드립니다.</p>
-  </section>
+<div class="slider">
+  <div class="slides">
+    <img src="banner1.png" alt="배너 이미지 1">
+    <img src="banner1.png" alt="배너 이미지 2">
+    <img src="banner1.png" alt="배너 이미지 3">
+  </div>
+</div>
 
-  <section id="portfolio">
-    <h2>포트폴리오</h2>
-    <p>실제 제작된 책자들을 확인해보세요. (이미지 슬라이드 예정)</p>
-  </section>
+<nav>
+  <a href="#services">서비스 소개</a>
+  <a href="#portfolio">포트폴리오</a>
+  <a href="#contact">견적 문의</a>
+  <a href="#about">회사 소개</a>
+</nav>
 
-  <section id="contact">
-    <h2>견적 문의</h2>
-    <p>이름 / 연락처 / 수량 / 사양 / 파일 첨부 등으로 견적 요청 가능 (폼 삽입 예정)</p>
-  </section>
+<section id="services">
+  <h2>📘 제작 서비스</h2>
+  <p>무선제본, 중철제본, 하드커버, 접지물 등 다양한 책자 인쇄 서비스를 제공합니다.</p>
+</section>
 
-  <section id="about">
-    <h2>회사 소개 & 연락처</h2>
-    <p>온다프린팅 | 전화: 010-0000-0000 | 이메일: onda8000@naver.com</p>
-  </section>
+<section id="portfolio">
+  <h2>📚 포트폴리오</h2>
+  <p>실제 제작된 책자 이미지가 들어갈 섹션입니다. (추후 이미지 추가 가능)</p>
+</section>
 
-  <footer>
-    &copy; 2025 온다프린팅. All rights reserved.
-  </footer>
+<section id="contact">
+  <h2>📩 견적 문의</h2>
+  <p>이름 / 연락처 / 제작 정보 / 파일 첨부 등을 통해 문의하실 수 있습니다. (폼은 추후 연결 가능)</p>
+</section>
+
+<section id="about">
+  <h2>📌 회사 소개</h2>
+  <p>온다프린팅은 단 한 권이라도 정성을 다해 제작합니다.<br>이메일: onda8000@naver.com</p>
+</section>
+
+<footer>
+  &copy; 2025 온다프린팅. All rights reserved.
+</footer>
+
 </body>
 </html>
