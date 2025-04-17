@@ -18,17 +18,21 @@
     }
     .slides {
       display: flex;
-      width: 300%;
-      animation: slide 9s infinite;
+      width: 600%;
+      animation: slide 18s infinite;
     }
     .slides img {
       width: 100%;
-      height: auto;
+      height: 300px;
+      object-fit: cover;
     }
     @keyframes slide {
       0%   { margin-left: 0; }
-      33%  { margin-left: -100%; }
-      66%  { margin-left: -200%; }
+      16.6%  { margin-left: -100%; }
+      33.3%  { margin-left: -200%; }
+      50%  { margin-left: -300%; }
+      66.6%  { margin-left: -400%; }
+      83.3%  { margin-left: -500%; }
       100% { margin-left: 0; }
     }
     header {
@@ -77,9 +81,12 @@
 
 <div class="slider">
   <div class="slides">
-    <img src="banner1.png" alt="배너 이미지 1">
-    <img src="banner1.png" alt="배너 이미지 2">
-    <img src="banner1.png" alt="배너 이미지 3">
+    <img src="slide1.png" alt="슬라이드1">
+    <img src="slide2.png" alt="슬라이드2">
+    <img src="slide3.png" alt="슬라이드3">
+    <img src="slide4.png" alt="슬라이드4">
+    <img src="slide5.png" alt="슬라이드5">
+    <img src="slide6.png" alt="슬라이드6">
   </div>
 </div>
 
